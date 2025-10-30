@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 15%);
+}
+
+#calculator {
+    font-family: Arial, sans-serif;
+    background-color: hotpink;
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: aliceblue;
+}
+
+#key {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+
+button:active {
+    background-color: #ccc;
+}
+
+.operator-btn {
+    background-color: coral;
+}
+
+.operator-btn:hover {
+    background-color: darkorange;
+}
+
+.operator-btn:active {
+    background-color: orangered;
+}
+
+button:nth-child(1)  { background-color: rgb(255, 0, 0); }
+button:nth-child(2)  { background-color: rgb(255, 128, 0); }
+button:nth-child(3)  { background-color: rgb(255, 255, 0); color: black; }
+button:nth-child(4)  { background-color: rgb(128, 255, 0); }
+button:nth-child(5)  { background-color: rgb(0, 255, 0); }
+button:nth-child(6)  { background-color: rgb(0, 255, 128); }
+button:nth-child(7)  { background-color: rgb(0, 255, 255); color: black; }
+button:nth-child(8)  { background-color: rgb(0, 128, 255); }
+button:nth-child(9)  { background-color: rgb(0, 0, 255); }
+button:nth-child(10) { background-color: rgb(128, 0, 255); }
+button:nth-child(11) { background-color: rgb(255, 0, 255); }
+button:nth-child(12) { background-color: rgb(255, 0, 128); }
+button:nth-child(13) { background-color: rgb(255, 51, 51); }
+button:nth-child(14) { background-color: rgb(255, 153, 51); }
+button:nth-child(15) { background-color: rgb(51, 204, 255); }
+button:nth-child(16) { background-color: rgb(102, 51, 255); }
